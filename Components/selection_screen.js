@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, Button } from 'react-native';
+import { Platform, StyleSheet, TouchableOpacity, Text, View, Button } from 'react-native';
+import { NativeRouter, Route, Link } from 'react-router-native'
 
 export default class Start extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Intelligent Communication</Text>
-        <Text style={styles.welcome}>Intelligent Profiling
+        <Text style={styles.welcome2}>Intelligent Profiling
         </Text>
         <View>
         <Text style={styles.heading}>Effective Interpersonal Communication Skills</Text>
@@ -18,10 +19,21 @@ export default class Start extends Component {
         </View>
 
         <View style={{flexDirection:'row'}}>
-        <Button 
+        {/* <Button 
+        style={styles.buttons}
         title='Profiling'/>
         <Button 
-        title='Smart Talk'/>
+        title='Smart Talk'/> */}
+        <TouchableOpacity
+         style={styles.buttons}>
+        <Link to='/start'>
+         <Text style={{color:'white'}}> PROFILING </Text>
+        </Link>
+        </TouchableOpacity>
+        <TouchableOpacity
+         style={styles.buttons}>
+         <Text style={{color:'white'}}> SMART TALK </Text>
+        </TouchableOpacity>
         </View>
         
         
@@ -35,16 +47,21 @@ export default class Start extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    paddingTop: 75,
     alignItems: 'center',
     textAlign: 'center',
     padding:'2%',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'whitesmoke',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    
+  },
+  welcome2: {
+    fontSize: 20,
+    textAlign: 'center',
+    marginBottom: 100
   },
   instructions: {
     textAlign: 'center',
@@ -53,7 +70,10 @@ const styles = StyleSheet.create({
   },
   heading:{
     fontSize: 17,
-    color:'green',
+    color:'#1DD58D',
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -.5, height: .7},
+    textShadowRadius: 1
   },
   text:{
     fontSize: 12,
@@ -61,4 +81,24 @@ const styles = StyleSheet.create({
 ,
 marginBottom: 10
   },
+  buttons:{
+    margin: '20%',
+    backgroundColor: '#1DD58D',
+    borderRadius: 15,
+    borderColor:'black',
+    borderWidth:2,
+    alignItems:'center',
+    padding: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+	width: 0,
+	height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
+    },
+  
+    
 });
