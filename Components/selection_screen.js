@@ -19,11 +19,7 @@ export default class Start extends Component {
         </View>
 
         <View style={{flexDirection:'row'}}>
-        {/* <Button 
-        style={styles.buttons}
-        title='Profiling'/>
-        <Button 
-        title='Smart Talk'/> */}
+       
         <TouchableOpacity
          style={styles.buttons}>
         <Link to='/start'>

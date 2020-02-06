@@ -10,9 +10,9 @@ const Routes = props => {
     return(
      
       <Switch>
-      <Route exact path="/" component={Selection} />
+      <Route exact path="/" component={Welcome} />
       <Route path="/start" component={Start} />
-      {/* <Route path="/selection" component={Selection} /> */}
+      <Route path="/selection" component={Selection} />
       </Switch>
       
 
