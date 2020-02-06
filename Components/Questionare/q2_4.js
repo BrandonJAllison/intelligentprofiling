@@ -2,7 +2,7 @@ import React from 'react'
 import { View, TextInput, TouchableOpacity,StyleSheet, } from 'react-native';
 import { Container, Header, Content, ListItem, Text, Radio, Right, Left } from 'native-base';
 
-const q1_4 = props => {
+const q2_4 = props => {
 
     return (
        <Container style={styles.container}>
@@ -219,4 +219,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default q1_4
+export default q2_4
