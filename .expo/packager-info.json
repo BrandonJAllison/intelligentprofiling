@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 21558,
-  "expoServerNgrokUrl": "https://ke-29g.anonymous.intelligentprofiling.exp.direct",
-  "packagerNgrokUrl": "https://packager.ke-29g.anonymous.intelligentprofiling.exp.direct",
-  "ngrokPid": 21610
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

@@ -195,6 +195,11 @@ const q3_4 = props => {
                </View>      
            </View>
 
+           <TouchableOpacity
+         style={styles.buttons}>
+         <Text style={{color:'white'}}> CONTINUE </Text>
+        </TouchableOpacity>
+
        </Container>
     )
 
@@ -217,6 +222,24 @@ const styles = StyleSheet.create({
       color: '#333333',
       marginBottom: 5,
     },
+    buttons:{
+        margin: '5%',
+        backgroundColor: '#1DD58D',
+        borderRadius: 15,
+        borderColor:'black',
+        borderWidth:2,
+        alignItems:'center',
+        padding: 10,
+        shadowColor: "#000",
+        shadowOffset: {
+        width: 0,
+        height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+    
+        elevation: 5,
+        }
   });
 
 export default q3_4
